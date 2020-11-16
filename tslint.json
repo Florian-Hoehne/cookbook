@@ -82,9 +82,10 @@
     ],
     "semicolon": {
       "options": [
-        "always"
+        "never"
       ]
     },
+    "new-parens": true,
     "space-before-function-paren": {
       "options": {
         "anonymous": "never",
@@ -126,10 +127,8 @@
     "whitespace": {
       "options": [
         "check-branch",
-        "check-decl",
         "check-operator",
         "check-separator",
-        "check-type",
         "check-typecast"
       ]
     },

@@ -16,11 +16,11 @@ export interface Recipe
  *
  * @return configured recipe
  */
-export function create(config: any = {}) : Recipe {
-  let target = new class implements Recipe {
-    description: string = "new recipe description"
-    imagePath: string = "new image path"
-    name: string = "new recipe"
+export function create(config: any = {}): Recipe {
+  const target = new class implements Recipe {
+    description = 'new recipe description'
+    imagePath = 'new image path'
+    name = 'new recipe'
   }
   Object.assign(target, config)
   return target
